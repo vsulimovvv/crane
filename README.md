@@ -1,5 +1,3 @@
-## Название
+## Кран Лендинг
 
-### Страницы
-
-https://vsulimovvv.github.io/_/app/index.html  
+https://vsulimovvv.github.io/crane/app/index.html
