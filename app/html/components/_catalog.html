@@ -1,7 +1,10 @@
 <section class="catalog">
+  <div class="catalog__top">
+    <div class="container">
+      <h2 class="catalog__title section-title">Заполните опросный лист</h2>
+    </div>
+  </div>
   <div class="container">
-    <h2 class="catalog__title section-title">Заполните опросный лист</h2>
-
     <ul class="catalog__list">
       <li class="catalog__item">
         <article class="product-card">
@@ -16,7 +19,7 @@
               Краны мостовые <br />
               двухбалочные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -27,16 +30,16 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/2.webp" type="image/webp" />
+              <img src="img/products/2.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
               Краны мостовые <br />
-              двухбалочные
+              однобалочные опорные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn  overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -47,16 +50,16 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/3.webp" type="image/webp" />
+              <img src="img/products/3.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
               Краны мостовые <br />
-              двухбалочные
+              однобалочные подвесные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn  overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -67,14 +70,74 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/4.webp" type="image/webp" />
+              <img src="img/products/4.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
-              Краны мостовые <br />
-              двухбалочные
+              Краны <br />
+              консольные
+            </h3>
+            <button class="product-card__btn btn jib-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/5.webp" type="image/webp" />
+              <img src="img/products/5.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Тележки грузовые <br />
+              крановые
+            </h3>
+            <button class="product-card__btn btn cart-crane-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/6.webp" type="image/webp" />
+              <img src="img/products/6.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Тележки рельсовыe <br />
+              цеховые
+            </h3>
+            <button class="product-card__btn btn span-cart-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/7.webp" type="image/webp" />
+              <img src="img/products/7.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Лебедки шахтные <br />
+              откаточные и маневровые
             </h3>
             <button class="product-card__btn btn" type="button">
               <img src="img/download-icon.png" alt="download" />
@@ -84,24 +147,17 @@
         </article>
       </li>
       <li class="catalog__item catalog__item--big">
-        <article class="product-card">
-          <div class="product-card__top">
-            <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
-            </picture>
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">
-              Краны мостовые <br />
-              двухбалочные
-            </h3>
-            <button class="product-card__btn btn" type="button">
-              <img src="img/download-icon.png" alt="download" />
-              Заполнить опросный лист
-            </button>
-          </div>
-        </article>
+        <div class="catalog__item-bg"></div>
+        <div class="catalog__item-inner">
+          <h3 class="catalog__item-title">Не нашли, что искали?</h3>
+          <p class="catalog__item-text">
+            Оставьте заявку и на ши специалисты свяжется с Вами в ближайшее
+            время и помогут с выбором оборудования.
+          </p>
+          <button class="catalog__item-btn btn" type="button">
+            Оставить заявку
+          </button>
+        </div>
       </li>
     </ul>
   </div>

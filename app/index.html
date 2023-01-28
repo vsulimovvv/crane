@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--overhead">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,41 +50,968 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
+      <span class="popup__title">
+        Опросный лист <br />
+        для заказа крана мостового
+      </span>
 
       <form class="form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+        <div class="form-submit__inner">
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
 
-          <input
-            class="form-submit__input"
-            name="name"
-            id="online-name"
-            type="text"
-            placeholder="Введите ваше имя"
-            required
-          />
-        </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
+            <span class="form-submit__text"> Грузоподъёмность, (т) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Пролёт, (м)</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Высота подъёма груза, (м) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Место установки крана</span>
+          </label>
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Управление краном </span>
           </label>
 
-          <input
-            class="form-submit__input"
-            name="tel"
-            id="online-tel"
-            type="tel"
-            placeholder="+7 (___) ___-__-__"
-            required
-          />
+          <div class="checkboxes">
+            <span class="checkboxes__text">Рабочие скорости:</span>
+
+            <div class="checkboxes__list">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Передвижения крана </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"> Передвижения тележки</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Основного подъема </span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text"
+                  >Вспомогательного подъема (при наличии)</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Расстояние от головки подкранового рельса до первого перекрытия
+              (м)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Исполнение </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Исполнение </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Характеристика среды </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Профиль подкранового пути (тип рельса)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Длина подкранового пути (м) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Грузозахватное приспособление, применяемое при работе</span
+            >
+          </label>
+          <label class="form-submit__group g">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Рабочее напряжение, В, род тока
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Необходимость наличия частотных преобразователей в эл.схеме
+              управления краном</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Токоподвод </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Температурный режим на уровне крана (ОС)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Схема компоновки механизмов </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Группа режима (режим работы крана)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Количество заказываемых кранов (единиц)
+            </span>
+          </label>
+          <label class="form-submit__group form-submit__group--big">
+            <textarea
+              class="form-submit__input form-input form-submit__input--textarea"
+            ></textarea>
+
+            <span class="form-submit__text">
+              Особые требования к изготовлению крана
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Наименование предприятия, организации заказчика, ИНН/КПП</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Адрес предприятия, организации заказчика
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Ответственное лицо заказчика(должность, Ф.И.О.) (контактный
+              телефон/факс)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Руководитель предприятия (должность, Ф.И.О.)
+            </span>
+          </label>
         </div>
 
         <button class="form-submit__btn btn" type="button">
-          Заказать звонок
+          ОТПРАВИТЬ опросный лист
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--cart-crane">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <span class="popup__title">
+        Опросный лист <br />
+        для тележки мостового крана
+      </span>
+
+      <form class="form-submit">
+        <div class="form-submit__inner">
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Грузоподъёмность, (т) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Режим работы крана</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Масса тележки, кг </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Высота подъёма крана, м</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Колея тележки, мм</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">База тележки, мм</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Скорость передвижения тележки, м/с</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Скорость подъёма груза, м/с</span>
+          </label>
+
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Используемые грузозахватные приспособления</span
+            >
+          </label>
+
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Условия работы крана:</span>
+          </label>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Температура окружающей среды (°С)
+            </span>
+          </label>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Место установки крана </span>
+          </label>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Исполнение крана</span>
+          </label>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Тип подтележечного рельса</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Наличие ОГП</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Тип эл/схемы управления на кране</span
+            >
+          </label>
+
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Тип эл/схемы управления на кране</span
+            >
+          </label>
+
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Схема компановки механизма подъема</span
+            >
+          </label>
+          <label class="form-submit__group form-submit__group--big">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Дополнительные требования</span>
+          </label>
+
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Наименование предприятия, организации заказчика, ИНН/КПП</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Адрес предприятия, организации заказчика</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Ответственное лицо заказчика(должность, Ф.И.О.) (контактный
+              телефон/факс)</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Руководитель предприятия (должность, Ф.И.О.)</span
+            >
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          ОТПРАВИТЬ опросный лист
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--electric">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <span class="popup__title">
+        Опросный лист <br />
+        для крана мостового электрического
+      </span>
+
+      <form class="form-submit">
+        <div class="form-submit__inner">
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Конструкция крана (опорный/подвесной)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Характеристика перемещаемого груза
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Грузоподъемность, т </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Длина пролета, м </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Общая длина, м </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Длина консолей, м (для подвесного)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Высота подъема, м </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Режим работы (3К, 4К, 5К) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Периодичность включений (25, 40, 60) %
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Температура окружающей среды, град. С
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Место установки </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Тип </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Тип кранового пути, №, ГОСТ </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Тип тали </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Наличие тормоза на передвижение тали
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Наличие 2х скоростей на передвижение тали, м/с
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Тип токоподвода (кабельный, троллейный)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Класс взрывоопасной зоны: </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Группа взрывоопасной смеси: </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Категория взрывоопасной смеси:
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Кол-во ГПМ на подкрановом пути
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Ограничитель движения кран-балки
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Регулирование скорости на ходу моста
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Место работы кран-балки </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Интенсивность работы </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> RAL оборудования </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Регулирование скорости на ходу моста
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Управление посредством радиочастотного канала (Радиоуправление)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Управление с пола (подвесной пульт)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Управление с пола (подвесной пульт)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Наименование предприятия, организации заказчика, ИНН/КПП
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Адрес предприятия, организации заказчика
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Ответственное лицо заказчика(должность, Ф.И.О.) (контактный
+              телефон/факс)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Руководитель предприятия (должность, Ф.И.О.)</span
+            >
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          ОТПРАВИТЬ опросный лист
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--jib">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <span class="popup__title">
+        Опросный лист <br />
+        для крана консольного
+      </span>
+
+      <form class="form-submit">
+        <div class="form-submit__inner">
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Характеристика перемещаемого груза
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Грузоподъемность, т </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Вылет консоли (стрелы), м </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Габаритная высота крана </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Высота подъема крюка, м </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Угол поворота консоли </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Привод поворота консоли </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Необходимость комплектации грузоподъемной талью
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Тип тали </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Конструктивные особенности тали</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Режим работы (3К, 4К) </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Периодичность включений (25, 40) %
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Температура окружающей среды, град. С
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Место установки </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Исполнение крана </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Степень защиты электрооборудования
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Необходимость радиоуправления
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Наличие тормоза на передвижение тали
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Наличие двух скоростей на передвижение тали, м/с
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Наличие двух скоростей на механизм подъема,м/с
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Наименование предприятия, организации заказчика, ИНН/КПП
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Адрес предприятия, организации заказчика</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Ответственное лицо заказчика(должность, Ф.И.О.) (контактный
+              телефон/факс)
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Руководитель предприятия (должность, Ф.И.О.)
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          ОТПРАВИТЬ опросный лист
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--span-cart">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <span class="popup__title">
+        Опросный лист <br />
+        для межпролетной тележки
+      </span>
+
+      <form class="form-submit">
+        <div class="form-submit__inner">
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Грузоподъемность, т </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Скорость передвижения, м/с </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Размеры грузовой платформы (LхВ), мм
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Грузовая платформа </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Высота тележки от оси катания рельса до верхней точки грузовой
+              платформы (Н), мм
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Колея (расстояние между осями подтележечных рельсов), мм
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Тип и размер подтележечного рельса
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Климатическое исполнение: У; Т</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Категория размещения: 1; 2; 3; 4
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Температура окружающей среды </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Рабочее напряжение, В, род тока
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Группа режима </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Исполнение </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Токоподвод </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Управление </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"> Длина пути, м</span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Приборы безопасности </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Оборудование, устанавливаемое на тележке
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Оснащение тормозом механизма передвижения</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Длина пути: в помещении и на улице
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Тип привода тележки </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">Дополнительные требования </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Наименование предприятия, организации заказчика, ИНН/КПП
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Адрес предприятия, организации заказчика
+            </span>
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text">
+              Ответственное лицо заказчика(должность, Ф.И.О.) (контактный
+              телефон/факс)</span
+            >
+          </label>
+          <label class="form-submit__group">
+            <input class="form-submit__input form-input" type="text" required />
+
+            <span class="form-submit__text"
+              >Руководитель предприятия (должность, Ф.И.О.)
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          ОТПРАВИТЬ опросный лист
         </button>
       </form>
     </div>
@@ -206,17 +1133,186 @@
 
 
       <main class="main">
-        <section class="hero">
-  <picture>
-    <source srcset="img/1.webp" type="image/webp" />
-    <img class="image" src="image/1.jpg" alt="image" height="200" />
-  </picture>
+        <div class="main-bg">
+          <section class="hero">
+  <div class="hero__wrapper">
+    <div class="hero__offer">
+      <h2 class="hero__title">
+        <span>Производим</span> и реализуем крановое оборудование
+      </h2>
+      <p class="hero__text">
+        Быстро и эффективно реализуем сложные задачи организации производства,
+        повысим производительность и безопасность рабочих мест.
+      </p>
+      <button class="hero__btn btn" type="button">
+        Оставить заявку
+        <img src="img/arrow-right.png" alt="arrow" />
+      </button>
+    </div>
+    <div class="hero__slider">
+      <div class="product__slider">
+        <div class="slider-thumbs">
+          <div class="slider-thumbs__main swiper" id="slider-main">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="img/hero/1.webp" type="image/webp" />
+                  <img src="img/hero/1.jpg" alt="img" />
+                </picture>
+
+                <span class="slider-thumbs__text">
+                  Опорные <br />
+                  краны
+                </span>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="img/hero/2.webp" type="image/webp" />
+                  <img src="img/hero/2.jpg" alt="img" />
+                </picture>
+
+                <span class="slider-thumbs__text">
+                  Подвесные <br />
+                  краны
+                </span>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="img/hero/3.webp" type="image/webp" />
+                  <img src="img/hero/3.jpg" alt="img" />
+                </picture>
+
+                <span class="slider-thumbs__text">
+                  Однобалочные <br />
+                  краны
+                </span>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="img/hero/4.webp" type="image/webp" />
+                  <img src="img/hero/4.jpg" alt="img" />
+                </picture>
+
+                <span class="slider-thumbs__text">
+                  Двухбаллочные <br />
+                  краны
+                </span>
+              </li>
+              <li class="swiper-slide">
+                <picture>
+                  <source srcset="img/hero/5.webp" type="image/webp" />
+                  <img src="img/hero/5.jpg" alt="img" />
+                </picture>
+
+                <span class="slider-thumbs__text"> Лебедки </span>
+              </li>
+            </ul>
+
+            <div class="slider-thumbs__main-arrows">
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+            </div>
+          </div>
+
+          <div class="slider-thumbs__nav">
+            <div class="slider-thumbs__nav-wrap swiper" id="slider-nav">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide slider-nav__slide">Опорные краны</li>
+                <li class="swiper-slide slider-nav__slide">Подвесные краны</li>
+                <li class="swiper-slide slider-nav__slide">
+                  Однобалочные краны
+                </li>
+                <li class="swiper-slide slider-nav__slide">
+                  Двухбаллочные краны
+                </li>
+                <li class="swiper-slide slider-nav__slide">Лебедки</li>
+              </ul>
+            </div>
+
+            <!-- <div class="slider-thumbs__nav-control">
+              <button
+                class="swiper-button-prev"
+                type="button"
+                aria-label="Следующий"
+              ></button>
+              <button
+                class="swiper-button-next"
+                type="button"
+                aria-label="Предыдущий"
+              ></button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-        <section class="catalog">
+          <section class="advantages">
   <div class="container">
-    <h2 class="catalog__title section-title">Заполните опросный лист</h2>
+    <ul class="advantages__list">
+      <li class="advantages-item">
+        <picture>
+          <source srcset="img/advantages/1.webp" type="image/webp" />
+          <img src="img/advantages/1.png" alt="img" />
+        </picture>
+        <span class="advantages-item__text">Надежность</span>
+      </li>
+      <li class="advantages-item">
+        <picture>
+          <source srcset="img/advantages/2.webp" type="image/webp" />
+          <img src="img/advantages/2.png" alt="img" />
+        </picture>
+        <span class="advantages-item__text">Качество</span>
+      </li>
+      <li class="advantages-item">
+        <picture>
+          <source srcset="img/advantages/3.webp" type="image/webp" />
+          <img src="img/advantages/3.png" alt="img" />
+        </picture>
+        <span class="advantages-item__text">Гарантия</span>
+      </li>
+    </ul>
 
+    <ul class="advantages__cols">
+      <li class="advantages-col">
+        <p class="advantages-col__text">
+          Знаете параметры <br />
+          кранового оборудования?
+        </p>
+        <button class="advantages-col__btn btn btn--transparent" type="button">
+          Заполнить опросный лист
+        </button>
+      </li>
+      <li class="advantages-col">
+        <p class="advantages-col__text">
+          Нужна помощь <br />
+          специалиста?
+        </p>
+        <button class="advantages-col__btn btn btn--transparent" type="button">
+          Получить консультацию
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        </div>
+        <section class="catalog">
+  <div class="catalog__top">
+    <div class="container">
+      <h2 class="catalog__title section-title">Заполните опросный лист</h2>
+    </div>
+  </div>
+  <div class="container">
     <ul class="catalog__list">
       <li class="catalog__item">
         <article class="product-card">
@@ -231,7 +1327,7 @@
               Краны мостовые <br />
               двухбалочные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -242,16 +1338,16 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/2.webp" type="image/webp" />
+              <img src="img/products/2.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
               Краны мостовые <br />
-              двухбалочные
+              однобалочные опорные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn  overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -262,16 +1358,16 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/3.webp" type="image/webp" />
+              <img src="img/products/3.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
               Краны мостовые <br />
-              двухбалочные
+              однобалочные подвесные
             </h3>
-            <button class="product-card__btn btn" type="button">
+            <button class="product-card__btn btn  overhead-btn" type="button">
               <img src="img/download-icon.png" alt="download" />
               Заполнить опросный лист
             </button>
@@ -282,14 +1378,74 @@
         <article class="product-card">
           <div class="product-card__top">
             <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
+              <source srcset="img/products/4.webp" type="image/webp" />
+              <img src="img/products/4.png" alt="products" />
             </picture>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__title">
-              Краны мостовые <br />
-              двухбалочные
+              Краны <br />
+              консольные
+            </h3>
+            <button class="product-card__btn btn jib-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/5.webp" type="image/webp" />
+              <img src="img/products/5.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Тележки грузовые <br />
+              крановые
+            </h3>
+            <button class="product-card__btn btn cart-crane-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/6.webp" type="image/webp" />
+              <img src="img/products/6.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Тележки рельсовыe <br />
+              цеховые
+            </h3>
+            <button class="product-card__btn btn span-cart-btn" type="button">
+              <img src="img/download-icon.png" alt="download" />
+              Заполнить опросный лист
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="catalog__item">
+        <article class="product-card">
+          <div class="product-card__top">
+            <picture>
+              <source srcset="img/products/7.webp" type="image/webp" />
+              <img src="img/products/7.png" alt="products" />
+            </picture>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__title">
+              Лебедки шахтные <br />
+              откаточные и маневровые
             </h3>
             <button class="product-card__btn btn" type="button">
               <img src="img/download-icon.png" alt="download" />
@@ -299,24 +1455,17 @@
         </article>
       </li>
       <li class="catalog__item catalog__item--big">
-        <article class="product-card">
-          <div class="product-card__top">
-            <picture>
-              <source srcset="img/products/1.webp" type="image/webp" />
-              <img src="img/products/1.png" alt="products" />
-            </picture>
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__title">
-              Краны мостовые <br />
-              двухбалочные
-            </h3>
-            <button class="product-card__btn btn" type="button">
-              <img src="img/download-icon.png" alt="download" />
-              Заполнить опросный лист
-            </button>
-          </div>
-        </article>
+        <div class="catalog__item-bg"></div>
+        <div class="catalog__item-inner">
+          <h3 class="catalog__item-title">Не нашли, что искали?</h3>
+          <p class="catalog__item-text">
+            Оставьте заявку и на ши специалисты свяжется с Вами в ближайшее
+            время и помогут с выбором оборудования.
+          </p>
+          <button class="catalog__item-btn btn" type="button">
+            Оставить заявку
+          </button>
+        </div>
       </li>
     </ul>
   </div>
@@ -683,7 +1832,102 @@
       </main>
 
       <footer class="footer">
-  <div class="container"></div>
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo" href="#">
+        <img src="img/logo.png" alt="logo" />
+      </a>
+
+      <a href="tel:+78312141381" class="footer__phone">8 (831) 214-13-81</a>
+
+      <div class="footer__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О заводе </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Галерея</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Сертификаты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Статьи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <address class="footer__address">
+        ООО «Нижегородский Поставщик -Кран» 603037, <br />
+        г. Нижний Новгород, ул. Торфяная, д. 30
+      </address>
+
+      <div class="footer__btns">
+        <a class="footer__btn" href="#" target="_blank">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M17.0402 4.64062C17.1654 4.24406 17.0402 3.95578 16.4865 3.95578H14.6454C14.181 3.95578 13.9665 4.2082 13.8414 4.4782C13.8414 4.4782 12.8943 6.78445 11.5717 8.27965C11.1428 8.71207 10.9463 8.85621 10.7139 8.85621C10.5887 8.85621 10.4277 8.71207 10.4277 8.31586V4.62199C10.4277 4.15371 10.285 3.9375 9.89156 3.9375H6.99609C6.70992 3.9375 6.53133 4.15371 6.53133 4.36992C6.53133 4.82027 7.19262 4.92855 7.26398 6.18961V8.92969C7.26398 9.52418 7.15852 9.63281 6.92438 9.63281C6.29895 9.63281 4.77984 7.30863 3.86859 4.66031C3.69141 4.13578 3.51141 3.9375 3.04664 3.9375H1.18793C0.651797 3.9375 0.5625 4.18957 0.5625 4.45992C0.5625 4.94648 1.18793 7.39652 3.47555 10.6393C4.99465 12.8542 7.15711 14.0446 9.10512 14.0446C10.285 14.0446 10.4277 13.7742 10.4277 13.3239V11.6483C10.4277 11.108 10.5349 11.018 10.9104 11.018C11.1783 11.018 11.661 11.1618 12.7512 12.2249C14.002 13.4859 14.2165 14.0625 14.9136 14.0625H16.7544C17.2905 14.0625 17.5409 13.7921 17.3978 13.2697C17.2371 12.7473 16.6293 11.9907 15.8428 11.09C15.4139 10.5859 14.7705 10.0273 14.574 9.75691C14.3061 9.39656 14.3775 9.25242 14.574 8.92828C14.5561 8.92828 16.8082 5.72133 17.0402 4.63922"
+              fill="currentColor"
+            />
+          </svg>
+
+          Вконтакте
+        </a>
+        <a class="footer__btn" href="#" target="_blank">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9.91667 8.5L7.4375 9.91667V7.08334L9.91667 8.5Z"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1.41666 9.00079V7.9985C1.41666 5.94787 1.41666 4.92221 2.0577 4.26275C2.69945 3.60258 3.70953 3.57425 5.72899 3.51687C6.68524 3.48996 7.66274 3.47083 8.49999 3.47083C9.33653 3.47083 10.314 3.48996 11.271 3.51687C13.2904 3.57425 14.3005 3.60258 14.9416 4.26275C15.5833 4.92221 15.5833 5.94858 15.5833 7.9985V9.00079C15.5833 11.0521 15.5833 12.0771 14.9423 12.7373C14.3005 13.3967 13.2912 13.4258 11.271 13.4824C10.3147 13.51 9.33724 13.5292 8.49999 13.5292C7.57615 13.5264 6.6524 13.5108 5.72899 13.4824C3.70953 13.4258 2.69945 13.3974 2.0577 12.7373C1.41666 12.0771 1.41666 11.0514 1.41666 9.0015V9.00079Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+
+          Youtube
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <a class="footer__link" href="#">TDZPT@yandex.ru</a>
+        <a class="footer__link" href="#"> Пользовательское соглашение</a>
+        <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+          <span>Разработка сайта</span>
+          <img src="img/logo-company.png" alt="АдвансМедиа" />
+        </a>
+      </div>
+    </div>
+  </div>
 </footer>
 
     </div>
@@ -717,11 +1961,3 @@
 
   </body>
 </html>
-
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->
