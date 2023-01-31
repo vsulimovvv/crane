@@ -507,7 +507,7 @@ body.no-scroll {
           mask: url("../img/arrow-slider.png") no-repeat center/contain;
 }
 
-.swiper-button-next::after {
+.swiper-button-prev::after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1676,6 +1676,9 @@ body.no-scroll {
   -o-transition: 200ms ease;
   transition: 200ms ease;
   padding-right: 28px;
+}
+.hero .slider-thumbs__nav-wrap .swiper-slide span {
+  pointer-events: none;
 }
 .hero .slider-thumbs__nav-wrap .swiper-slide-thumb-active {
   background-color: var(--color-accent);
