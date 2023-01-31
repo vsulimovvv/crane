@@ -157,5 +157,6 @@ window.addEventListener('DOMContentLoaded', () => {
     bindModal('.cart-crane-btn', '.popup--cart-crane', '.popup__close');
     bindModal('.jib-btn', '.popup--jib', '.popup__close');
     bindModal('.span-cart-btn', '.popup--span-cart', '.popup__close');
+    bindModal('.winches-btn', '.popup--winches', '.popup__close');
   })();
 });
