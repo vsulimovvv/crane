@@ -158,5 +158,6 @@ window.addEventListener('DOMContentLoaded', () => {
     bindModal('.jib-btn', '.popup--jib', '.popup__close');
     bindModal('.span-cart-btn', '.popup--span-cart', '.popup__close');
     bindModal('.winches-btn', '.popup--winches', '.popup__close');
+    bindModal('.btn-order', '.popup--order', '.popup__close');
   })();
 });

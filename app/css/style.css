@@ -868,13 +868,6 @@ body.no-scroll {
     width: 100%;
   }
 }
-.popup--order {
-  opacity: 1;
-  visibility: visible;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .popup--order .popup__container {
   width: calc(100% - 40px);
   max-width: 440px;
